@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Offer Acceptance Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="form-container">
+    <h1 class="form-title">Offer Acceptance Form</h1>
+    <form id="offerForm">
+      <div class="input-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="input-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="input-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+      <div class="input-group">
+        <label for="address">Address</label>
+        <textarea id="address" name="address" required></textarea>
+      </div>
+      <div class="input-group">
+        <label for="offerDetails">Offer Details</label>
+        <textarea id="offerDetails" name="offerDetails" required></textarea>
+      </div>
+      <div class="input-group">
+        <label for="documents">Upload Documents</label>
+        <input type="file" id="documents" name="documents" multiple>
+      </div>
+      <button type="submit" class="submit-btn">Accept Offer</button>
+    </form>
+    <div class="success-message" style="display: none;">
+      <h2>Form Submitted Successfully!</h2>
+      <div class="checkmark"></div>
+      <p>Thank you for accepting the offer. We have received your details.</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
